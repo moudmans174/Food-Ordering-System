@@ -1,0 +1,80 @@
+.place-order {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.place-order h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.order-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.user-info,
+.order-summary {
+  flex: 1 1 45%;
+  background-color: #fdfdfd;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.user-info h3,
+.order-summary h3 {
+  margin-bottom: 20px;
+}
+
+.user-info form input,
+.user-info form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.summary-line {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.summary-line.total {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.place-order-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: tomato;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.place-order-btn:hover {
+  background-color: #1a242f;
+}
+
+@media screen and (max-width: 768px) {
+  .order-container {
+    flex-direction: column;
+  }
+}
